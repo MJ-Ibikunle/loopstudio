@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;400&display=swap');
+
+body {
+    font-family: 'Alata', sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+}
+  
+h1, h2, h3, .text-div a, .hero-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 50px;
+    line-height: 1.1;
+}
+  
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1440px; 
+    margin: 0 auto;       
+    overflow: hidden;
+    height: 100%; 
+    position: relative;
+}
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/mobile/image-hero.jpg') center /contain no-repeat;
+    background-size: 1440px 700px;
+    width: 100%;
+    position: relative;
+} 
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding:65px 120px;
+    align-items: center;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    padding-right: 18px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+.menu-toggle{
+    display: none;
+}
+.hero-text{
+    height: 500px;
+    display: flex;
+    align-items: center; 
+    margin-left: 100px;
+    
+}
+.hero-text h1 {
+    max-width: 500px;
+    padding: 20px;
+    padding-right: 80px;
+    border: 2px solid white;
+    color: white;
+}
+.main{
+    background-color: white;
+    margin: 100px 100px;
+}
+.section-2 {
+    position: relative;
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    max-width: 1110px; 
+}
+.section-2 img{
+    width:100%;
+    max-width: 900px;
+    height: auto ;
+    display: block;
+}
+.section-2 .text{
+    background-color: white;
+    padding: 50px 0px 5px 50px;
+    margin-bottom: 100px;
+    position: absolute;
+    max-width: 300px;
+    right: 0;
+    bottom: 0;
+    transform: translateY(50%);
+}
+.section-2 h2{
+    margin-bottom: 12px;
+    font-size: 29px;
+    letter-spacing: 0.6px;
+    line-height: 35px;
+}
+.section-2 p{
+    line-height: 16px ;
+    color: black;
+    opacity: 0.5;
+    font-size:7.5px;
+    letter-spacing: 0.8px;
+}
+
+.section-3 .heading {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-3 h1{
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+.see-all{
+    border: 2px solid grey;
+    padding: 5px 30px;
+    font-size: 13px ;
+    letter-spacing: 2px;
+    color: black;
+    text-decoration: none;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.card{
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transform: scale(1.2);
+}
+.card img:hover{
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.8s;
+}
+
+.text-div a {
+    text-decoration: none;
+    position: absolute;
+    left: 30px;
+    bottom: 18px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 27px; 
+}
+.see-all-mobile{
+    display: none;
+}
+footer{
+    background-color: black;
+    padding: 30px 120px;
+    color: white;
+}
+.upper{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.lower{
+    display: flex;
+    justify-content: space-between;
+}
+.socials img{
+    padding-left: 10px;
+}
+.copyright{
+    opacity: 0.5;
+}
+
+
+
+@media screen and (max-width:800px){
+
+    .container {
+        width: 100%;
+    }
+    header {
+        background: url('./images/mobile/image-hero.jpg') no-repeat center center/cover;
+        width: 100%;
+        padding: 24px;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .nav{
+        padding: 10px 5px;
+    }
+    .menu-toggle {
+        display: flex;
+        font-size: 30px;
+        background: none;
+        cursor: pointer;
+        color: white;
+    }
+
+    .nav .nav-links{
+        display: none;
+    }
+    .hero-text{
+        height: 500px;
+        margin-left: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2px;
+    }
+    .hero-text h1 {
+        font-size: 35px;
+        max-width: 300px;
+        padding: 20px;
+    }
+    .main{
+        margin: 30px;
+    }
+    .section-2{
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+    }
+    .section-2 img{
+        width:100%;
+        height: auto;
+        max-width: 100%;
+
+    }
+    .section-2 .text{
+        padding: 20px 10px;
+        margin-top: 10px;
+        position: static;
+        transform: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .section-2 p{
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    .section-3 {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .section-3 .heading {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column; 
+    }
+    .section-3 h1{
+        font-size: 30px;
+        padding: 0 25px;
+    }
+    .grid-container{
+        grid-template-columns:1fr;
+        gap: 20px;
+    }
+    .card{
+        position: relative;
+        height: 120px;
+    }
+    .text-div a {
+        bottom: 10px;
+        left: 20px;
+        font-size: 20px;
+    }
+    .see-all{
+        display: none;
+    }
+    .see-all-mobile {
+        margin: 35px 70px;
+        padding: 7px;
+        border: 2px solid grey;
+        font-size: 15px ;
+        letter-spacing: 5px;
+        color: black;
+        text-decoration: none;
+        display: block;
+    }
+    footer {
+        display: none;
+    }
+    .footer-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        padding: 40px 0px;
+        text-align: center;
+        gap: 30px;
+    }
+    .footer-mobile .nav-links{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-mobile .copyright{
+        color: white;
+    }
+
+}
